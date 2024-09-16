@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM EVENTS</title>
+</head>
+<body>
+    <h1>Dom er ajk special events</h1>
+    <button onclick="console.log(7)">Call Me</button>
+    <button onclick="makeWhite()">Click Me</button>
+    <button onclick="document.body.style.  backgroundColor='yellow'">Make Yellow</button>
+    <button onclick="makered()">Make Red</button>
+    <button id="make-blue">Make Blue</button>
+    <button id="make-purple">Make Purple</button>
+    <button id="make-pink">Make Pink</button>
+    <button id="make-green">Make Green</button>
+    <button id="make-goldenrod">Make Goldenrod</button>
+
+<h1 id="this">this is a dom</h1>
+<button onclick="handle()">button</button>
+<button id="isTh">Push</button>
+
+
+ 
+
+    
+    <script src="js/events.js"></script>
+    <script>
+        function handle(){
+            const thisIs = document.getElementById('this');
+            thisIs.innerText = 'this is awesome dom'
+        }
+
+
+         document.getElementById('isTh').addEventListener('click', function(){
+            const thisIs = document.getElementById('this');
+            thisIs.innerText = 'this is my dom'
+         })
+        
+        
+    </script>
+    
+</body>
+</html>
